@@ -1,10 +1,3 @@
 discord.py
 asyncio
 random
-openpyxl
-urllib
-bs4
-os
-sys
-json
-random
