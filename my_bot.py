@@ -1,22 +1,4 @@
 import discord
-import asyncio
-import random
-import openpyxl
-from discord import Member
-from discord.ext import commands
-import youtube_dl
-from urllib.request import urlopen, Request
-import urllib
-import urllib.request
-import bs4
-import os
-import sys
-import json
-from selenium import webdriver
-import time
-import datetime
-import ffmpeg
-import random
 
 countG = 0
 players = {}
@@ -28,7 +10,7 @@ searchYoutubeHref={}
 
 app = discord.Client()
 
-token = "NTU1MzQ5MzEyMTcxOTMzNzE3.D20SYw.tGF8LMVkUKcTIrLkDt92MxOL-Tk"
+token = os.environ["BOT_TOKEN"]
 
 def check_queue(id):
     if queues[id]!=[]:
